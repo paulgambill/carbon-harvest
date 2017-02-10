@@ -20,6 +20,10 @@ Template.hello.helpers({
 Template.hello.events({
   'click button'(event, instance) {
     // increment the counter when button is clicked
-    instance.counter.set(instance.counter.get() + 1);
+    //instance.counter.set(instance.counter.get() + 1);
+     web3.eth.getBalance("0x130744aBb08b11697d332406e6e3Eb223258F933",
+    function(err, res){
+      alert(res)
+    });
   },
 });

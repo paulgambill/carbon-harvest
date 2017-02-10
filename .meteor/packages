@@ -26,3 +26,4 @@ ethereum:tools
 ethereum:accounts
 frozeman:template-var
 frozeman:persistent-minimongo2
+twbs:bootstrap

@@ -1,25 +1,40 @@
 <head>
-  <title>Charv</title>
+  <title>Carbon Harvest</title>
 </head>
 
-<body>
-  <h1>Welcome to Meteor!</h1>
+<body >
 
+  {{> toprow}}
+
+<div class="row col-md-4 col-lg-2 " style="background-color:  purple">
+  {{> info}}  </div>
+  <div class="row col-offset-md-4">
   {{> hello}}
-  {{> info}}
+  </div>
+  
 </body>
 
-<template name="hello">
-  <button>Click Me</button>
-  <p>You've pressed the button {{counter}} times.</p>
+<template name="toprow">
+<div class="container-fluid row">
+  <h1 class ="pull-left"> Carbon Harvest </h1>
+  
+</div>
 </template>
-
 <template name="info">
-  <h2>Learn Meteor!</h2>
+ 
   <ul>
-    <li><a href="https://www.meteor.com/try" target="_blank">Do the Tutorial</a></li>
-    <li><a href="http://guide.meteor.com" target="_blank">Follow the Guide</a></li>
-    <li><a href="https://docs.meteor.com" target="_blank">Read the Docs</a></li>
-    <li><a href="https://forums.meteor.com" target="_blank">Discussions</a></li>
+    <li style="color:white"><a style="color:white" href="https://www.meteor.com/try" target="_blank">View offset istory</a></li>
+    <li style="color:white"><a style="color:white" target="_blank">View c02 hstory</a></li>
+    <li style="color:white"><a style="color:white" target="_blank">Pay offsets</a></li>
+    <li style="color:white"><a style="color:white" target="_blank">Over time stats</a></li>
   </ul>
 </template>
+
+<template name="hello">
+<div class="row col-md-offset-2" style="border: solid; border-width: 2px">
+<h2>Bob's Farm</h2>
+<button>Click Me To Check Balance</button>
+</div>
+</template>
+
+
